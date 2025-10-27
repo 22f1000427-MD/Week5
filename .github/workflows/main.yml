@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "30 6 * * *"  # runs every day at 06:30 UTC (you can change this)
 
+permissions:
+  contents: write
+  
 jobs:
   commit:
     runs-on: ubuntu-latest
